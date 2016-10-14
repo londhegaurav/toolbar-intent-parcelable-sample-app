@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        layout="@layout/toolbar_main"
+        />
+
+    <!--  Name Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:text="Name:"
+        android:padding="20dp"/>
+
+    <EditText android:id="@+id/edTxName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:singleLine="true" />
+
+    <!--  Phone Number Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:text="Phone Number:"
+        android:padding="20dp"/>
+
+    <EditText android:id="@+id/edTxNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:singleLine="true" />
+
+    <!-- Submit button -->
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:onClick="onSubmit"
+        android:text="Submit"
+        android:padding="20dp"/>
+
+</LinearLayout>
